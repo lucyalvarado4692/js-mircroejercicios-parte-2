@@ -214,15 +214,15 @@ function click11Action() {
   let secondNumber = prompt("Escribe un número");
   let divisor;
   let text = "";
-  let minorNumber = minor();
-  function minor() {
-    if (firstNumber < secondNumber) {
+  let biggerNumber = bigger();
+  function bigger() {
+    if (firstNumber > secondNumber) {
       return firstNumber;
     } else {
       return secondNumber;
     }
   }
-  for (divisor = 2; divisor < minorNumber / 2; divisor++) {
+  for (divisor = 2; divisor < biggerNumber / 2; divisor++) {
     if (firstNumber % divisor === 0 && secondNumber % divisor === 0) {
       text += divisor + ",";
     }
